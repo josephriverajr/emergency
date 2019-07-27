@@ -1,0 +1,273 @@
+body{
+  font:15px/1.5 Arial,Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background:#F3F1F1;
+}
+/*global*/
+.container{
+  width: 100  %;
+  margin:auto;
+  overflow: hidden;
+  border:0px;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+/*header*/
+header{
+  background: #2f55a4;
+  color:#ffff;
+  padding-top:0px;
+  min-height: 70px;
+  border-bottom: #FFA500 8px solid;
+}
+header h1{
+  color:#ffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+ header a{
+   color:#ffff;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 15px;
+ }
+
+
+ header li{
+   float: left;
+   display: inline;
+   padding: 0 20px 0 20px;
+   margin-top:20px;
+   margin-bottom:0px;
+ }
+
+ header #branding{
+   margin-top:5px;
+   margin-bottom:10px;
+   float: left;
+
+ }
+ header #branding h1{
+   margin-left: 0;
+ }
+ header nav{
+   float:right;
+   margin-top: 20px;
+ }
+ header .highlight, header .current a{
+   color:#FFA500;
+   font-weight: bold;
+ }
+header a:hover{
+  color: #FFD700;
+  font-weight: bold;
+}
+
+/*section 1*/
+#sec1{
+  min-height:400px;
+  background:url('./image/everyjuan.jpg') no-repeat;
+}
+
+
+ /*Section 2 Login*/
+ #sec2{
+   padding:0px;
+   min-height:10px;
+
+
+ }
+   #sec2 h5{
+    margin-top: 15px;
+    float:left;
+    margin-left: 40px;
+
+    /*text-align: left;*/
+  }
+  #sec2 font{
+    color: #000000;
+
+  }
+  #sec2 form{
+    float: right;
+    margin-top: 15px;
+  }
+  #sec2 input[type="text"]{
+    padding:15px;
+    height: 20px;
+    width: 250px;
+  }
+  #sec2 input[type="password"]{
+    margin-top: 5px;
+    padding:15px;
+    height: 20px;
+    width: 250px;
+  }
+
+  #btnLogin{
+    margin-top: 8px;
+    height: 32px;
+    background: #66B2FF;
+    border:0;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #ffffff;
+    width: 115px;
+    margin-left: 8px;
+  }
+  #btnHelp{
+    margin-top: 70px;
+    height: 50px;
+    background: #DC143C;
+    border:0;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #ffffff;
+    width: 350px;
+    margin-left: -250px;
+  }
+
+  /*logos section*/
+
+  #logos{
+  margin-top:0px;
+  border:0;
+  }
+  #logos .box{
+    float:left;
+    text-align:center;
+    width: 20%;
+    padding-left: 0px;
+    border:0;
+  }
+  #logos .box img{
+    width: 100px;
+    border:0;
+  }
+
+  footer{
+    padding: 10px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color:#FFA500;
+    text-align: center;
+    height: 35px;
+
+  }
+  footer p{
+    text-align: center;
+    margin-top:-1px;
+    font-style:oblique;
+  }
+
+
+ #sec3 img{
+   margin-top:0;
+   width:20%;
+ }
+
+
+  /*media queries or design for mobile devices*/
+  @media(max-width: 768px){
+    header #branding,
+    header nav,
+    #sec2 h1,
+    #sec2 form,
+    #logos .box{
+      float:none;
+      text-align: center;
+      width: 100%;
+    }
+
+    header nav li{
+      float:none;
+      margin-top:-3px;
+      text-align: left;
+      margin-left:0px;
+      width: 100%;
+    }
+
+    header{
+      padding-bottom: 20px;
+    }
+
+    #sec1 h1{
+      margin-top: 40px;
+    }
+    #sec2 button{/*help button*/
+      margin-top: 11px;
+      display:block;
+      width: 100%;
+      margin-left: auto;
+      height: 70px;
+    }
+    #sec2 input{
+      margin-top: 11px;
+      display:block;
+      width: 100%;
+      height: 40px;
+      margin-left: auto;
+    }
+    #sec2 form input[type="text"]{
+      width: 96%;
+      margin-bottom: 5px;
+      border:1px solid;
+    }
+    #sec2 form input[type="password"]{
+      margin-top: -10px;
+      width: 96%;
+      margin-bottom: 0px;
+      border: 1px solid;
+    }
+    #sec2 h5{  /*create account*/
+      margin-top: 10px;
+      display:block;
+      width: 100%;
+      margin-left:10px;
+      margin-bottom: 10px;
+
+    }
+    footer{
+      color: #ffffff;
+      background-color:#FFA500;
+      text-align: center;
+      height: 50px;
+    }
+    footer p{
+      text-align:center;
+      margin-top: 5px;
+    }
+    #btnHelp{
+      margin-top: 10px;
+      height: 50px;
+      background: #DC143C;
+      border:0;
+      padding-left: 0px;
+      padding-right: 0px;
+      color: #ffffff;
+      width: 350px;
+      margin-left:0px;
+    }
+
+    #sec3 img{
+      margin-top:0;
+      width:49%;
+      height:49%;
+    }
+
+
+
+
+
+
+
+
+
+
+}
